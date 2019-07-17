@@ -1,27 +1,19 @@
-import React, { useContext } from "react";
-import "./App.css";
-import List from "./components/List/index";
-import { PokeContext } from "./context/index";
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Landing from './pages/Landing'
+import Pokedata from './pages/Pokedata'
+import "./App.css"
 
 function App() {
-  const appContext = useContext(PokeContext);
-  const { loading, search } = appContext;
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-md-12">
-          <div>
-            {loading ? (
-              <h1 className="text-center">
-                ...accessing PokeServer for {search} data
-              </h1>
-            ) : (
-              <List />
-            )}
-          </div>
-        </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/data" component={Pokedata} />
+        </Switch>
       </div>
-    </div>
+    </Router>
   );
 }
 
