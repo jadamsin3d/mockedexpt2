@@ -9,7 +9,7 @@ const List = () => {
   return (
     <div className="pokeList">
       {list.map(item => {
-        return <Item item={item} name={item.name} />
+        return <Item item={item} key={item.name} url={item.url} />
       })}
     </div>
   );

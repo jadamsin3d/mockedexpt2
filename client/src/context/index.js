@@ -7,9 +7,10 @@ const PokeProvider = props => {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [list, setList] = useState([]);
+  const [mon, setMon] = useState([])
 
   const findPokemon = async e => {
-    const URL = "https://pokeapi.co/api/v2/pokemon/?limit=840";
+    const URL = "https://pokeapi.co/api/v2/pokemon/?limit=807";
     let pokeArray = {};
     let result;
     e.preventDefault();
@@ -29,6 +30,21 @@ const PokeProvider = props => {
       }
     }
   };
+
+  const getMonData = async e => {
+    const apiURL = (e.target.getAttribute("URL"))
+    try {
+      console.log(e.target.getAttribute("URL"))
+      const pokeData = await fetch(apiURL)
+      const data = await pokeData.json()
+      setMon(data)
+      console.log(data)
+    } catch (err) {
+      if(err) {
+        console.log(err.message, "This is the error displayed")
+      }
+    }
+  }
 
   const handleSearchChange = e => {
     setSearch(e.target.value);
@@ -59,7 +75,9 @@ const PokeProvider = props => {
         list,
         imgUrl,
         handleSearchChange,
-        findPokemon
+        findPokemon,
+        getMonData,
+        mon
       }}
     >
       {props.children}
