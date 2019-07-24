@@ -15,7 +15,7 @@ const Item = ({item, url}) => {
         width="75px"
         url={url}
       />
-      <span key={item.name} url={url}>{item.name}</span>
+      <span key={item.name} url={url}>{item.name.toUpperCase()}</span>
     </div>
   );
 };

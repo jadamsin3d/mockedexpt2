@@ -3,11 +3,13 @@ import React, { useState, useEffect } from "react";
 const PokeContext = React.createContext();
 
 const PokeProvider = props => {
-  const imgUrl ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
+  const imgUrl =
+    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [list, setList] = useState([]);
-  const [mon, setMon] = useState([])
+  const [mon, setMon] = useState([]);
+  const [speciesData, setSpeciesData] = useState([]);
 
   const findPokemon = async e => {
     const URL = "https://pokeapi.co/api/v2/pokemon/?limit=807";
@@ -20,7 +22,7 @@ const PokeProvider = props => {
       const data = await pokeData.json();
       pokeArray = data.results;
       result = pokeArray.filter(function(pokemon) {
-        return pokemon.name.includes(search);
+        return pokemon.name.includes(search.toLowerCase());
       });
       setList(result);
       setLoading(false);
@@ -32,19 +34,38 @@ const PokeProvider = props => {
   };
 
   const getMonData = async e => {
-    const apiURL = (e.target.getAttribute("URL"))
+    const apiURL = e.target.getAttribute("URL");
     try {
-      console.log(e.target.getAttribute("URL"))
-      const pokeData = await fetch(apiURL)
-      const data = await pokeData.json()
-      setMon(data)
-      console.log(data)
+      const pokeData = await fetch(apiURL);
+      const data = await pokeData.json();
+      setMon(data);
+      const pokeDetails = data.species.url;
+      getPokeDetails(pokeDetails);
     } catch (err) {
-      if(err) {
-        console.log(err.message, "This is the error displayed")
+      if (err) {
+        console.log(err.message, "This is the error displayed");
       }
     }
-  }
+  };
+
+  const getPokeDetails = async pokeDetails => {
+    try {
+      const pokeData = await fetch(pokeDetails);
+      const data = await pokeData.json();
+      const pokeArray = [];
+      function enFilter() {
+        data.flavor_text_entries.forEach(item => {
+          if (item.language.name === "en") pokeArray.push(item.flavor_text);
+        });
+      }
+      enFilter()
+      setSpeciesData(pokeArray[0]);
+    } catch (err) {
+      if (err) {
+        console.log(err.message, "This is the error displayed");
+      }
+    }
+  };
 
   const handleSearchChange = e => {
     setSearch(e.target.value);
@@ -63,8 +84,8 @@ const PokeProvider = props => {
           console.log(err.message, "This is the error displayed");
         }
       }
-    };
-    fetchStarterList()
+    }
+    fetchStarterList();
   }, []);
 
   return (
@@ -77,7 +98,8 @@ const PokeProvider = props => {
         handleSearchChange,
         findPokemon,
         getMonData,
-        mon
+        mon,
+        speciesData
       }}
     >
       {props.children}
