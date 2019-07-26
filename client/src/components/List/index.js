@@ -1,6 +1,7 @@
 import React, { useContext } from "react"
 import Item from "../Item/index"
 import { PokeContext } from "../../context/index"
+import './style.css'
 
 const List = () => {
   const appContext = useContext(PokeContext)

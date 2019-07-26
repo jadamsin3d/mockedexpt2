@@ -1,16 +1,15 @@
-import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Landing from './pages/Landing'
-import Pokedata from './pages/Pokedata'
-import "./App.css"
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Landing from "./pages/Landing";
+import "./App.css";
 
 function App() {
   return (
     <Router>
-      <div>
+      <div className="appDiv">
+        <h1>PokeDex</h1>
         <Switch>
           <Route exact path="/" component={Landing} />
-          <Route exact path="/data" component={Pokedata} />
         </Switch>
       </div>
     </Router>

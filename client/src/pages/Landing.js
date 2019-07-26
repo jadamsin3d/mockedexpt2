@@ -3,6 +3,7 @@ import List from '../components/List/index'
 import Search from '../components/Search/index'
 import MonData from '../components/MonData/index'
 import { PokeContext } from '../context/index'
+import "./style.css"
 
 function Landing() {
   const appContext = useContext(PokeContext)
@@ -11,8 +12,7 @@ function Landing() {
     <div className="container">
       <div className="row">
         <div className="col-md-6">
-          <h1>PokeDex</h1>
-          <div>
+          <div className="searchDiv">
             <Search />
             {loading ? (
               <h1 className="text-center">
