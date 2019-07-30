@@ -1,4 +1,6 @@
 .pokeList {
     height: 800px;
     overflow-y: auto;
+    padding-left: 15px;
+    padding-right: -15px;
 }

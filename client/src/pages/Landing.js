@@ -23,7 +23,7 @@ function Landing() {
             )}
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 monResults">
           {mon.length === 0 ? <h1>Click a pokemon to find out more</h1> : <MonData />}
         </div>
       </div>

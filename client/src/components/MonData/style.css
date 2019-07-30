@@ -1,0 +1,12 @@
+.monData {
+    font-family: 'Press Start 2P', cursive;
+    background-color: white;
+    height: 830px;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.monName {
+    color: black;
+    padding: 0px;
+}

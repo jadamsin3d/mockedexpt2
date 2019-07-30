@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { PokeContext } from "../../context/index";
+import "./style.css";
 
 function Search() {
   const appContext = useContext(PokeContext)

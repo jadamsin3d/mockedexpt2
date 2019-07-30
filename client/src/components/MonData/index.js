@@ -1,14 +1,26 @@
 import React, { useContext } from "react";
 import { PokeContext } from "../../context/index";
+import './style.css'
 
 const MonData = () => {
   const appContext = useContext(PokeContext);
   const { mon, speciesData, imgUrl } = appContext;
   let secondtype = mon.types[1];
+  
+  let typeA = document.getElementsByClassName('typeOne').value
+  switch (typeA) {
+    case "poison":
+      document.getElementsByClassName('typeOne').style.background = "#623798";
+      document.getElementsByClassName('typeOne').style.color = "#375c0b";
+      break;
+    
+    default:
+      break;
+  }
 
   return (
-    <div>
-      <h1>Name: {mon.name.charAt(0).toUpperCase() + mon.name.slice(1)}</h1>
+    <div className="monData">
+      <h1 className="monName" >{mon.name.charAt(0).toUpperCase() + mon.name.slice(1)}</h1>
       <div>
         <span className="typeOne">{mon.types[0].type.name}</span>
         {secondtype === undefined ? null : (
@@ -21,13 +33,13 @@ const MonData = () => {
         <div>
           <span>
             <p>
-              Regular
+              Regular:
               <img src={mon.sprites.front_default} alt="regular" />
             </p>
           </span>
           <span>
             <p>
-              Shiny
+              Shiny:
               <img src={mon.sprites.front_shiny} alt="shiny" />
             </p>
           </span>
@@ -35,12 +47,12 @@ const MonData = () => {
       )}
       <div>
         <h3>Base Stats:</h3>
-        <p>Base HP: {mon.stats[5].base_stat}</p>
-        <p>Base Attack: {mon.stats[4].base_stat}</p>
-        <p>Base Defense: {mon.stats[3].base_stat}</p>
-        <p>Base Speed: {mon.stats[0].base_stat}</p>
-        <p>Base Special Attack: {mon.stats[2].base_stat}</p>
-        <p>Base Special Defense: {mon.stats[1].base_stat}</p>
+        <p>HP: {mon.stats[5].base_stat}</p>
+        <p>Attack: {mon.stats[4].base_stat}</p>
+        <p>Defense: {mon.stats[3].base_stat}</p>
+        <p>Speed: {mon.stats[0].base_stat}</p>
+        <p>Sp. Attack: {mon.stats[2].base_stat}</p>
+        <p>Sp. Defense: {mon.stats[1].base_stat}</p>
       </div>
       <div>
         <h3>Fun Facts:</h3>
