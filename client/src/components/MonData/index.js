@@ -6,16 +6,9 @@ const MonData = () => {
   const appContext = useContext(PokeContext);
   const { mon, speciesData, imgUrl } = appContext;
   let secondtype = mon.types[1];
-  
-  let typeA = document.getElementsByClassName('typeOne').value
-  switch (typeA) {
-    case "poison":
-      document.getElementsByClassName('typeOne').style.background = "#623798";
-      document.getElementsByClassName('typeOne').style.color = "#375c0b";
-      break;
-    
-    default:
-      break;
+
+  function classChangeOne() {
+
   }
 
   return (
@@ -30,21 +23,17 @@ const MonData = () => {
       {mon.sprites.front_default === null ? (
         <img src={imgUrl + String(mon.id) + ".png"} alt="backuppic" />
       ) : (
-        <div>
-          <span>
-            <p>
-              Regular:
+          <div>
+            <span>
+              <div className="regDiv">Regular:</div>
               <img src={mon.sprites.front_default} alt="regular" />
-            </p>
-          </span>
-          <span>
-            <p>
-              Shiny:
+            </span>
+            <span>
+              <div className="regDiv">Shiny:</div>
               <img src={mon.sprites.front_shiny} alt="shiny" />
-            </p>
-          </span>
-        </div>
-      )}
+            </span>
+          </div>
+        )}
       <div>
         <h3>Base Stats:</h3>
         <p>HP: {mon.stats[5].base_stat}</p>

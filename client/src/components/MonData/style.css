@@ -10,3 +10,23 @@
     color: black;
     padding: 0px;
 }
+
+h3 {
+    font-size: 22px;
+    margin: 20px 0px;
+}
+
+p {
+    margin: 0%;
+}
+
+.regDiv {
+    width: 150px;
+    background-color: yellow;
+}
+
+.regDiv img {
+    background-color: white;
+    float: left;
+
+}
