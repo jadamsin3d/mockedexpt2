@@ -21,12 +21,280 @@ p {
 }
 
 .regDiv {
-    width: 150px;
-    background-color: yellow;
+    width: 120px;
+    height: 96px;
+    padding-top: 48px;
+    margin: 0;
 }
 
-.regDiv img {
-    background-color: white;
-    float: left;
+.regDivImg {
+    position: relative;
+    bottom: 96px;
+    left: 120px;
+}
 
+.typeOneDark {
+    background-color: #161130;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOnePsychic {
+    background-color: #b22ac7;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneFighting {
+    background-color: #5c371a;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneGround {
+    background-color: #99816b;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneElectric {
+    background-color: #dbd035;
+    color: #17160e;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneBug {
+    background-color: #759954;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneIce {
+    background-color: #ade0dd;
+    color: #17160e;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneFire {
+    background-color: #e07f10;
+    color: #17160e;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneWater {
+    background-color: #529dba;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneRock {
+    background-color: #8a9aa1;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneFairy {
+    background-color: #aa93b5;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneGhost {
+    background-color: #acbdbc;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOnePoison {
+    background-color: #a76ceb;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneNormal {
+    background-color: #d4cda1;
+    color: #17160e;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneGhost {
+    background-color: #8646a3;
+    color: #17160e;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneDragon {
+    background-color: #bd1751;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneGrass {
+    background-color: #4bb536;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneSteel {
+    background-color: #5c5c5c;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoDark {
+    background-color: #161130;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoPsychic {
+    background-color: #b22ac7;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoFighting {
+    background-color: #5c371a;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoGround {
+    background-color: #99816b;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoElectric {
+    background-color: #dbd035;
+    color: #17160e;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoBug {
+    background-color: #759954;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoIce {
+    background-color: #ade0dd;
+    color: #17160e;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoFire {
+    background-color: #e07f10;
+    color: #17160e;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoWater {
+    background-color: #529dba;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoRock {
+    background-color: #8a9aa1;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoFairy {
+    background-color: #aa93b5;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoGhost {
+    background-color: #acbdbc;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoPoison {
+    background-color: #a76ceb;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoNormal {
+    background-color: #d4cda1;
+    color: #17160e;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoGhost {
+    background-color: #8646a3;
+    color: #17160e;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoDragon {
+    background-color: #bd1751;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoGrass {
+    background-color: #4bb536;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoSteel {
+    background-color: #5c5c5c;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeOneFlying {
+    background-color: #a6abab;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.typeTwoFlying {
+    background-color: #a6abab;
+    color: #eae9f2;
+    padding: 6px;
+    border-radius: 12px;
 }
