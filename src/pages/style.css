@@ -1,0 +1,13 @@
+.searchDiv {
+    font-family: 'Press Start 2P', cursive;
+    background-color: white;
+}
+
+select__menu-list::-webkit-scrollbar {
+    color: black;
+}
+
+select__menu-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+   

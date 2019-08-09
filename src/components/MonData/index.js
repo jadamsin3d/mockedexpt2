@@ -138,11 +138,11 @@ const MonData = () => {
         <img src={imgUrl + String(mon.id) + ".png"} alt="backuppic" />
       ) : (
         <div>
-          <div>
+          <div className="imageDivOne">
             <div className="regDiv">Regular:</div>
             <img className="regDivImg" src={mon.sprites.front_default} alt="regular" />
           </div>
-          <div>
+          <div className="imageDivTwo">
             <div className="regDiv">Shiny:</div>
             <img className="regDivImg" src={mon.sprites.front_shiny} alt="shiny" />
           </div>

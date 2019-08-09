@@ -12,13 +12,38 @@
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin: 20px 0px;
+    background-color: slategray;
+    padding: 5px 10px;
+    width: 270px;
+    border-radius: 17px;
+    color: #eae9f2;
+
+}
+
+h1 {
+    font-size: 36px;
+    padding: 5px 10px;
+    border-radius: 17px;
+    color: #eae9f2;
+    margin: 10px 5px;
 }
 
 p {
     margin: 0%;
 }
+
+.imageDivOne {
+    position: relative;
+    margin-bottom: -80px
+}
+
+.imageDivTwo {
+    position: relative;
+    margin-bottom: -80px
+}
+
 
 .regDiv {
     width: 120px;
@@ -38,6 +63,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOnePsychic {
@@ -45,6 +71,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneFighting {
@@ -52,6 +79,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneGround {
@@ -59,6 +87,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneElectric {
@@ -66,6 +95,7 @@ p {
     color: #17160e;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneBug {
@@ -73,6 +103,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneIce {
@@ -80,6 +111,7 @@ p {
     color: #17160e;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneFire {
@@ -87,6 +119,7 @@ p {
     color: #17160e;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneWater {
@@ -94,6 +127,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneRock {
@@ -101,6 +135,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneFairy {
@@ -108,6 +143,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneGhost {
@@ -115,6 +151,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOnePoison {
@@ -122,6 +159,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneNormal {
@@ -129,6 +167,7 @@ p {
     color: #17160e;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneGhost {
@@ -136,6 +175,7 @@ p {
     color: #17160e;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneDragon {
@@ -143,6 +183,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneGrass {
@@ -150,6 +191,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneSteel {
@@ -157,6 +199,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoDark {
@@ -164,6 +207,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoPsychic {
@@ -171,6 +215,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoFighting {
@@ -178,6 +223,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoGround {
@@ -185,6 +231,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoElectric {
@@ -192,6 +239,7 @@ p {
     color: #17160e;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoBug {
@@ -199,6 +247,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoIce {
@@ -206,6 +255,7 @@ p {
     color: #17160e;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoFire {
@@ -213,6 +263,7 @@ p {
     color: #17160e;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoWater {
@@ -220,6 +271,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoRock {
@@ -227,6 +279,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoFairy {
@@ -234,6 +287,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoGhost {
@@ -241,6 +295,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoPoison {
@@ -248,6 +303,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoNormal {
@@ -255,6 +311,7 @@ p {
     color: #17160e;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoGhost {
@@ -262,6 +319,7 @@ p {
     color: #17160e;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoDragon {
@@ -269,6 +327,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoGrass {
@@ -276,6 +335,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoSteel {
@@ -283,6 +343,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeOneFlying {
@@ -290,6 +351,7 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .typeTwoFlying {
@@ -297,4 +359,5 @@ p {
     color: #eae9f2;
     padding: 6px;
     border-radius: 12px;
+    margin: 0px 5px;
 }
